@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/stl.css">
+</head>
+<body>
+
+  <div class="password">
+    <div class="generator">
+      <h2>Password Generator</h2>
+      <form action="">
+        <input type="text" id="show" >
+        <i class="fa-regular fa-clipboard copy"></i>
+      </form>
+      <ul>
+        <li>
+          <p>Password Length</p>
+          <input type="number" class="length" min="5" max="20" value="5">
+        </li>
+
+        <li>
+          <p>Include uppercase letters</p>
+          <input type="checkbox" name="upper" id="upper" checked>
+        </li>
+
+        <li>
+          <p>Include Lowercase letters</p>
+          <input type="checkbox" name="lower" id="lower" checked>
+        </li>
+
+        <li>
+          <p>Include Numbers</p>
+          <input type="checkbox" name="number" id="number" checked>
+        </li>
+
+        <li>
+          <p>Include symbols</p>
+          <input type="checkbox" name="symbols" id="symb" checked>
+        </li>
+      </ul>
+      <button class="pass_btn">Generate Password</button>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
